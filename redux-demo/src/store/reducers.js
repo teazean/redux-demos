@@ -16,6 +16,12 @@ function counter(counter, action) {
   }
 }
 
+function test(test, action) {
+  console.log('reducer:', 'test');
+  return null;
+}
+
 export default combineReducers({
-  counter
+  counter,
+  test,
 });

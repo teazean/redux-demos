@@ -13,6 +13,9 @@ const store = createStore(
   applyMiddleware(logger),
 );
 
+store.subscribe((...args) => {
+  console.log('subscribe', 'context:', this, 'args: ', args);
+});
 class App extends Component {
   render() {
     return (
